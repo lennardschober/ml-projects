@@ -34,13 +34,6 @@ A machine learning model designed to solve captchas. This project uses Convoluti
 **Trainable params:** 2,488,369 (9.49 MB)  
 **Non-trainable params:** 450 (1.76 KB)
 
-## Installation
-Dependencies listed in requirements.txt. Ensure you have ```pip``` installed and run:
-
-```bash
-pip install -r requirements.txt
-```
-
 ## Usage
 1. #### Generate Captchas and annotations
     Use ```captcha_generator.py``` to generate CAPTCHA images, labels and a JSON file containing image paths and corresponding labels.
