@@ -1,8 +1,8 @@
-# Captcha Solver
-A machine learning model designed to solve captchas. This project uses Convolutional Neural Networks (CNNs) and Global Attention to recognize and decode captchas with high accuracy (>97%).
+# CAPTCHA Solver
+A machine learning model designed to solve CAPTCHAs. This project uses Convolutional Neural Networks (CNNs) and Global Attention to recognize and decode CAPTCHAs with high accuracy (>97%).
 
 ## Features
-- Captcha Recognition: Accurately predicts characters from captcha images.
+- CAPTCHA Recognition: Accurately predicts characters from CAPTCHA images.
 - Data Augmentation: Uses techniques like rotation, translation, and contrast adjustments to enhance model robustness.
 - Early Stopping: Monitors validation loss to prevent overfitting.
 - Data Visualization: Saves the training and validation loss in a plot after finishing training.
@@ -35,7 +35,7 @@ A machine learning model designed to solve captchas. This project uses Convoluti
 **Non-trainable params:** 450 (1.76 KB)
 
 ## Usage
-1. #### Generate Captchas and annotations
+1. #### Generate CAPTCHAs and annotations
     Use ```captcha_generator.py``` to generate CAPTCHA images, labels and a JSON file containing image paths and corresponding labels.
 
 2. #### Train the model
@@ -63,5 +63,5 @@ We can observe that the model is capable of solving quite challenging CAPTCHAs.
 This project is licensed under the Apache-2.0 License - see the [LICENSE](../../blob/main/LICENSE) file for details.
 
 ## Acknowledgments
-- <a href="https://pypi.org/project/captcha/" target="_blank">Captcha Library</a> for CAPTCHA generation
+- <a href="https://pypi.org/project/captcha/" target="_blank">CAPTCHA Library</a> for CAPTCHA generation
 - <a href="https://www.tensorflow.org/" target="_blank">Tensorflow</a> and <a href="https://keras.io/" target="_blank">Keras</a> for deep learning frameworks
