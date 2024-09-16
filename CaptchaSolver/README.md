@@ -5,6 +5,7 @@ A machine learning model designed to solve captchas. This project uses Convoluti
 - Captcha Recognition: Accurately predicts characters from captcha images.
 - Data Augmentation: Uses techniques like rotation, translation, and contrast adjustments to enhance model robustness.
 - Early Stopping: Monitors validation loss to prevent overfitting.
+- Data Visualization: Saves the training and validation loss in a plot after finishing training.
 
 ## Model
 | Layer (type)                   | Output Shape         | Param #   |
@@ -57,27 +58,16 @@ pip install -r requirements.txt
 ![Loss Plot](loss_plot.png)
 
 ## Example evaluations
-I generated 5 random CAPTCHAs and the model got all of them right in this case.
+I generated 10 random CAPTCHAs and the model got all of them right in this case. You can find them in the ```examples``` folder, but here are some of them.
 
-| ![Ex0](examples/0.png) |
-| :--: |
-| Solution: e2gg9 |
+| ![Ex0](examples/0.png) | ![Ex1](examples/1.png) |
+| :--: | :--: |
+| Solution: e2gg9 | Solution: 3qtry |
 
-| ![Ex1](examples/1.png) |
-| :--: |
-| Solution: 3qtry |
+| ![Ex7](examples/7.png) | ![Ex4](examples/4.png) |
+| :--: | :--: |
+| Solution: twbqw | Solution: kp454 |
 
-| ![Ex2](examples/2.png) |
-| :--: |
-| Solution: 5xnua |
-
-| ![Ex3](examples/3.png) |
-| :--: |
-| Solution: riroe |
-
-| ![Ex4](examples/4.png) |
-| :--: |
-| Solution: kp454 |
 
 We can observe that the model is capable of solving quite challenging CAPTCHAs.
 
