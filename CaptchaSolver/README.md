@@ -56,8 +56,33 @@ pip install -r requirements.txt
 ## Training loss plot
 ![Loss Plot](loss_plot.png)
 
+## Example evaluations
+I generated 5 random CAPTCHAs and the model got all of them right in this case.
+
+| ![Ex0](examples/0.png) |
+| :--: |
+| Solution: e2gg9 |
+
+| ![Ex1](examples/1.png) |
+| :--: |
+| Solution: 3qtry |
+
+| ![Ex2](examples/2.png) |
+| :--: |
+| Solution: 5xnua |
+
+| ![Ex3](examples/3.png) |
+| :--: |
+| Solution: riroe |
+
+| ![Ex4](examples/4.png) |
+| :--: |
+| Solution: kp454 |
+
+We can observe that the model is capable of solving quite challenging CAPTCHAs.
+
 ## License
-This project is licensed under the MIT License - see the [LICENSE](../../blob/main/LICENSE) file for details.
+This project is licensed under the Apache-2.0 License - see the [LICENSE](../../blob/main/LICENSE) file for details.
 
 ## Acknowledgments
 - <a href="https://pypi.org/project/captcha/" target="_blank">Captcha Library</a> for CAPTCHA generation
