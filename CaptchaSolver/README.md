@@ -53,14 +53,9 @@ A machine learning model designed to solve captchas. This project uses Convoluti
 ## Example evaluations
 I generated 10 random CAPTCHAs and the model got all of them right in this case. You can find them in the ```examples``` folder, but here are some of them.
 
-| ![Ex0](examples/0.png) | ![Ex1](examples/1.png) |
-| :--: | :--: |
-| Solution: e2gg9 | Solution: 3qtry |
-
-| ![Ex7](examples/7.png) | ![Ex4](examples/4.png) |
-| :--: | :--: |
-| Solution: twbqw | Solution: kp454 |
-
+| ![Ex0](examples/0.png) | ![Ex1](examples/1.png) | ![Ex7](examples/7.png) | ![Ex4](examples/4.png) |
+| :--: | :--: | :--: | :--: |
+| Solution: e2gg9 | Solution: 3qtry | Solution: twbqw | Solution: kp454 |
 
 We can observe that the model is capable of solving quite challenging CAPTCHAs.
 
