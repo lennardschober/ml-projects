@@ -60,7 +60,7 @@ I generated 10 random CAPTCHAs and the model got all of them right in this case.
 We can observe that the model is capable of solving quite challenging CAPTCHAs.
 
 ## License
-This project is licensed under the Apache-2.0 License - see the [LICENSE](../../blob/main/LICENSE) file for details.
+This project is licensed under the Apache-2.0 License - see the [LICENSE](../LICENSE) file for details.
 
 ## Acknowledgments
 - <a href="https://pypi.org/project/captcha/" target="_blank">CAPTCHA Library</a> for CAPTCHA generation
