@@ -5,8 +5,9 @@ Each project is self-contained, complete with code, explanations, and results. F
 
 ## Table of Contents
 1. [Projects](#projects)
-    - [CAPTCHA Solver](#captchasolver)
-    - [Image Classifier](#imageclassifier)
+    - [CAPTCHA Solver](#captcha-solver)
+    - [Image Classifier](#image-classifier)
+    - [Coming soon](#coming-soon)
 2. [Contributing](#contributing)
 3. [License](#license)
 
@@ -37,6 +38,8 @@ More details, including the dataset, model implementation, and results, can be f
 - Task: Binary image classification (Margot Robbie vs Jaime Pressly).
 - Dataset: 1,000 images (500 per class).
 - Technologies: Tensorflow/Keras.
+
+### Coming soon
 
 ## Contributing
 Contributions to this repository are highly encouraged! Whether it's improving existing models, adding new projects, or fixing bugs, your input is valuable. To contribute:
