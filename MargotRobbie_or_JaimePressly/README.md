@@ -46,7 +46,7 @@ A machine learning model designed to distinguish Margot Robbie from Jaime Pressl
     - visualize training progress in a plot
 
 2. #### Evaluate the model
-    Use ```predict.py``` to find out whether the image features Margot Robbie or Jaime Pressly
+    Use ```predict.py``` to find out whether an image features Margot Robbie or Jaime Pressly
 
 ## Training loss plot
 ![Loss Plot](loss_plot.png)
