@@ -1,5 +1,5 @@
 # CAPTCHA Solver
-A machine learning model designed to solve CAPTCHAs. This project uses Convolutional Neural Networks (CNNs) and Global Attention to recognize and decode CAPTCHAs with high accuracy (>97%).
+A machine learning model designed to solve CAPTCHAs. This project uses convolutional neural networks (CNNs) and global attention to recognize and decode CAPTCHAs with high accuracy (>97%).
 
 ## Features
 - CAPTCHA Recognition: Accurately predicts characters from CAPTCHA images.
@@ -55,7 +55,7 @@ I generated 10 random CAPTCHAs and the model got all of them right in this case.
 
 | ![Ex0](examples/0.png) | ![Ex1](examples/1.png) | ![Ex7](examples/7.png) | ![Ex4](examples/4.png) |
 | :--: | :--: | :--: | :--: |
-| Solution: e2gg9 | Solution: 3qtry | Solution: twbqw | Solution: kp454 |
+| Output: e2gg9 | Output: 3qtry | Output: twbqw | Output: kp454 |
 
 We can observe that the model is capable of solving quite challenging CAPTCHAs.
 
