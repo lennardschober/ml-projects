@@ -67,5 +67,5 @@ As I already said, the model isn't perfect.
 ## License
 This project is licensed under the Apache-2.0 License - see the [LICENSE](../LICENSE) file for details.
 
-## Acknowledgments
+## Acknowledgements
 - <a href="https://www.tensorflow.org/" target="_blank">Tensorflow</a> and <a href="https://keras.io/" target="_blank">Keras</a> for deep learning frameworks
