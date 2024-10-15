@@ -7,6 +7,7 @@ Each project is self-contained, complete with code, explanations, and results. F
 1. [Projects](#projects)
     - [CAPTCHA Solver](#captcha-solver)
     - [Image Classifier](#image-classifier)
+    - [Random Handwritten Digits Generator](#random-handwritten-digits-generator)
     - [Coming soon](#coming-soon)
 2. [Contributing](#contributing)
 3. [License](#license)
@@ -37,6 +38,15 @@ More details, including the dataset, model implementation, and results, can be f
 - Model: Convolutional neural network (CNN).
 - Task: Binary image classification (Margot Robbie vs Jaime Pressly).
 - Dataset: 1,000 images (500 per class).
+- Technologies: Tensorflow/Keras.
+
+### Random Handwritten Digits Generator
+This project focuses on generating random handwritten digits using a Generative Adversarial Network (GAN). The objective is to create realistic images of digits that mimic human handwriting. By training the GAN on a dataset of handwritten digits, the model learns to produce high-quality images that can be used for various applications, such as digit recognition and data augmentation. Despite the inherent challenges of generating diverse and coherent outputs, the model successfully achieves impressive results in creating realistic handwritten digits.
+
+#### Key features:
+- Model: Generative Adversarial Network (GAN).
+- Task: Generate images that mimic handwritten digits.
+- Dataset: MNIST digits.
 - Technologies: Tensorflow/Keras.
 
 ### Coming soon
