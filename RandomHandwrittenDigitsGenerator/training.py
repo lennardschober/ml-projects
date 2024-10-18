@@ -16,7 +16,7 @@ cross_entropy = tf.keras.losses.BinaryCrossentropy(from_logits=True)
 
 # Set the discriminator loss to the sum of the cross entropy of the real and fake classification.
 def discriminator_loss(real_output, fake_output):
-    real_loss = cross_entropy(tf.ones_like(real_output) * 0.9, real_output) # Label smoothing.
+    real_loss = cross_entropy(tf.ones_like(real_output) * 0.95, real_output) # Label smoothing.
     fake_loss = cross_entropy(tf.zeros_like(fake_output), fake_output)
     total_loss = real_loss + fake_loss
     return total_loss
@@ -27,7 +27,7 @@ def generator_loss(fake_output):
 
 # Define both models optimizers.
 generator_optimizer = tf.keras.optimizers.Adam(1e-3)
-discriminator_optimizer = tf.keras.optimizers.Adam(5e-4)
+discriminator_optimizer = tf.keras.optimizers.Adam(1e-3)
 
 # We feed this into the generator after each epoch to track the progress via a gif.
 seed = tf.random.normal([num_examples_to_generate, noise_dim])
@@ -77,18 +77,18 @@ def train(dataset, epochs):
         start = time.time()
 
         # Halve the learning rate every 100 epochs.
-        if (epoch + 1) % 100 == 0:
+        if (epoch + 1) % 75 == 0:
             gen_new_lr = generator_optimizer.learning_rate * 0.5
             generator_optimizer.learning_rate.assign(gen_new_lr)
 
             disc_new_lr = discriminator_optimizer.learning_rate * 0.5
             discriminator_optimizer.learning_rate.assign(disc_new_lr)
-            print(f'\n # Learning rate of generator halved to     {gen_new_lr:.7g} at epoch {epoch + 1}')
-            print(f'\n # Learning rate of discriminator halved to {disc_new_lr:.7g} at epoch {epoch + 1}')
+            print(f'\n # Learning rate of generator halved to     {gen_new_lr:.7g} for epoch {epoch + 1}')
+            print(f'\n # Learning rate of discriminator halved to {disc_new_lr:.7g} for epoch {epoch + 1}')
             
             # Optionally save the models.
-            # generator.save('generator.keras')
-            # discriminator.save('discriminator.keras')
+            generator.save('generator_checkpoint.keras')
+            discriminator.save('discriminator_checkpoint.keras')
 
         # Initialize variables to accumulate losses for this epoch.
         total_gen_loss = 0.0

@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 # =================
 BUFFER_SIZE = 60000             # The whole dataset will be considered for shuffling.
 BATCH_SIZE = 512
-EPOCHS = 400
-noise_dim = 200                 # Size of the input noise.
+EPOCHS = 500
+noise_dim = 100                 # Size of the input noise.
 num_examples_to_generate = 16   # Number of images for the gif.
 
 
