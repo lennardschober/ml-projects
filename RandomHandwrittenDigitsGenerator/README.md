@@ -7,45 +7,45 @@ A machine learning model designed to generate random handwritten digits. This pr
 
 ## Model
 ### Generator
-| Layer (Type)                    | Output Shape           | Parameters   |
-|----------------------------------|------------------------|--------------|
-| **Dense**                        | (None, 50,176)         | 10,035,200   |
-| **BatchNormalization**           | (None, 50,176)         | 200,704      |
-| **LeakyReLU**                    | (None, 50,176)         | 0            |
-| **Reshape**                      | (None, 7, 7, 1,024)    | 0            |
-| **Conv2DTranspose**              | (None, 7, 7, 512)      | 13,107,200   |
-| **BatchNormalization**           | (None, 7, 7, 512)      | 2,048        |
-| **LeakyReLU**                    | (None, 7, 7, 512)      | 0            |
-| **Conv2DTranspose**              | (None, 14, 14, 256)    | 3,276,800    |
-| **BatchNormalization**           | (None, 14, 14, 256)    | 1,024        |
-| **LeakyReLU**                    | (None, 14, 14, 256)    | 0            |
-| **Conv2DTranspose**              | (None, 14, 14, 128)    | 819,200      |
-| **BatchNormalization**           | (None, 14, 14, 128)    | 512          |
-| **LeakyReLU**                    | (None, 14, 14, 128)    | 0            |
-| **Conv2DTranspose**              | (None, 28, 28, 1)      | 3,200        |
+| Layer (type)               | Output Shape          | Param #   |
+|----------------------------|-----------------------|-----------|
+| dense (Dense)               | (None, 50176)         | 5,017,600 |
+| batch_normalization (Batch)  | (None, 50176)         | 200,704   |
+| leaky_re_lu (LeakyReLU)     | (None, 50176)         | 0         |
+| reshape (Reshape)           | (None, 7, 7, 1024)    | 0         |
+| conv2d_transpose (Conv2DTranspose) | (None, 14, 14, 512) | 13,107,200 |
+| batch_normalization_1 (BatchNormalization) | (None, 14, 14, 512) | 2,048     |
+| leaky_re_lu_1 (LeakyReLU)   | (None, 14, 14, 512)   | 0         |
+| conv2d_transpose_1 (Conv2DTranspose) | (None, 28, 28, 256) | 3,276,800 |
+| batch_normalization_2 (BatchNormalization) | (None, 28, 28, 256) | 1,024     |
+| leaky_re_lu_2 (LeakyReLU)   | (None, 28, 28, 256)   | 0         |
+| conv2d_transpose_2 (Conv2DTranspose) | (None, 28, 28, 128) | 819,200   |
+| batch_normalization_3 (BatchNormalization) | (None, 28, 28, 128) | 512       |
+| leaky_re_lu_3 (LeakyReLU)   | (None, 28, 28, 128)   | 0         |
+| conv2d_transpose_3 (Conv2DTranspose) | (None, 28, 28, 1)   | 3,200     |
 
-**Total Parameters**: 27,445,888 (104.70 MB)  
-**Trainable Parameters**: 27,343,744 (104.31 MB)  
-**Non-Trainable Parameters**: 102,144 (399.00 KB)
+**Total Params**: 22,428,288 (85.56 MB)  
+**Trainable Params**: 22,326,144 (85.17 MB)    
+**Non-trainable Params**: 102,144 (399.00 KB)
 
 ### Discriminator
-| Layer (Type)                | Output Shape          | Parameters   |
-|-----------------------------|-----------------------|--------------|
-| **Conv2D**                   | (None, 14, 14, 128)   | 3,328        |
-| **LeakyReLU**                | (None, 14, 14, 128)   | 0            |
-| **Dropout**                  | (None, 14, 14, 128)   | 0            |
-| **Conv2D**                   | (None, 7, 7, 256)     | 819,456      |
-| **LeakyReLU**                | (None, 7, 7, 256)     | 0            |
-| **Dropout**                  | (None, 7, 7, 256)     | 0            |
-| **Conv2D**                   | (None, 4, 4, 512)     | 3,277,312    |
-| **LeakyReLU**                | (None, 4, 4, 512)     | 0            |
-| **Dropout**                  | (None, 4, 4, 512)     | 0            |
-| **Flatten**                  | (None, 8,192)         | 0            |
-| **Dense**                    | (None, 1)             | 8,193        |
+| Layer (type)              | Output Shape        | Param #   |
+|---------------------------|---------------------|-----------|
+| conv2d (Conv2D)            | (None, 14, 14, 128) | 3328      |
+| leaky_re_lu_4 (LeakyReLU)  | (None, 14, 14, 128) | 0         |
+| dropout (Dropout)          | (None, 14, 14, 128) | 0         |
+| conv2d_1 (Conv2D)          | (None, 7, 7, 256)   | 819456    |
+| leaky_re_lu_5 (LeakyReLU)  | (None, 7, 7, 256)   | 0         |
+| dropout_1 (Dropout)        | (None, 7, 7, 256)   | 0         |
+| conv2d_2 (Conv2D)          | (None, 4, 4, 512)   | 3,277,312 |
+| leaky_re_lu_6 (LeakyReLU)  | (None, 4, 4, 512)   | 0         |
+| dropout_2 (Dropout)        | (None, 4, 4, 512)   | 0         |
+| flatten (Flatten)          | (None, 8192)        | 0         |
+| dense_1 (Dense)            | (None, 1)           | 8193      |
 
-**Total Parameters**: 4,108,289 (15.67 MB)  
-**Trainable Parameters**: 4,108,289 (15.67 MB)  
-**Non-Trainable Parameters**: 0
+**Total Params**: 4,108,289 (15.67 MB)  
+**Trainable Params**: 4,108,289 (15.67 MB)  
+**Non-trainable Params**: 0 (0.00 Byte)
 
 ## Usage
 1. #### Install dependencies
