@@ -8,7 +8,7 @@ Each project is self-contained, complete with code, explanations, and results. F
     - [CAPTCHA Solver](#captcha-solver)
     - [Image Classifier](#image-classifier)
     - [Random Handwritten Digits Generator](#random-handwritten-digits-generator)
-    - [Portrait colorization](#portrait-colorization)
+    - [Portrait Colorization](#portrait-colorization)
     - [Coming soon](#coming-soon)
 2. [Contributing](#contributing)
 3. [License](#license)
