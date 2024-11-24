@@ -8,6 +8,7 @@ Each project is self-contained, complete with code, explanations, and results. F
     - [CAPTCHA Solver](#captcha-solver)
     - [Image Classifier](#image-classifier)
     - [Random Handwritten Digits Generator](#random-handwritten-digits-generator)
+    - [Portrait colorization](#portrait-colorization)
     - [Coming soon](#coming-soon)
 2. [Contributing](#contributing)
 3. [License](#license)
@@ -26,6 +27,7 @@ More information, including the dataset, model architecture, training process, a
 - Accuracy: 97%+.
 - Dataset: Collection of distorted CAPTCHA images that can be gererated with Python.
 - Technologies: Tensorflow/Keras.
+---
 
 ### Image Classifier
 This project explores binary image classification using a convolutional neural network (CNN). The task is to distinguish between images of the actress Margot Robbie and actress Jaime Pressly, two individuals with similar appearances. Despite the challenge, the model is able to achieve moderate classification accuracy.
@@ -39,6 +41,7 @@ More details, including the dataset, model implementation, and results, can be f
 - Task: Binary image classification (Margot Robbie vs Jaime Pressly).
 - Dataset: 1,000 images (500 per class).
 - Technologies: Tensorflow/Keras.
+---
 
 ### Random Handwritten Digits Generator
 This project focuses on generating random handwritten digits using a Generative Adversarial Network (GAN). The objective is to create realistic images of digits that mimic human handwriting. By training the GAN on a dataset of handwritten digits, the model learns to produce high-quality images that can be used for various applications, such as digit recognition and data augmentation. Despite the inherent challenges of generating diverse and coherent outputs, the model successfully achieves impressive results in creating realistic handwritten digits.
@@ -48,8 +51,26 @@ This project focuses on generating random handwritten digits using a Generative 
 - Task: Generate images that mimic handwritten digits.
 - Dataset: MNIST digits.
 - Technologies: Tensorflow/Keras.
+---
+
+### Portrait Colorization
+This project uses a deep learning model to colorize grayscale portraits, leveraging a U-Net Generator and a PatchGAN Discriminator. The architecture is inspired by Pix2Pix, optimized to work in the La*b* color space, enabling the model to hallucinate only the color channels while preserving the structural integrity of the grayscale input.
+
+The model underwent two training phases:
+1. Pretraining on 100k images for 20 epochs using a combination of L1 and adversarial loss.
+2. Fine-tuning on 500k images for 5 epochs with adversarial loss only.
+
+The training datasets include FFHQ, CelebA-HQ, and Synthetic Faces High Quality (SFHQ), resized to 256x256 for uniformity.
+
+#### Key Features:
+- Model: U-Net Generator + PatchGAN Discriminator.
+- Loss Function: L1 + adversarial loss (pretraining), adversarial loss (fine-tuning).
+- Dataset: Over 525,000 images from FFHQ, CelebA-HQ, and SFHQ.
+- Technologies: TensorFlow/Keras.
+---
 
 ### Coming soon
+---
 
 ## Contributing
 Contributions to this repository are highly encouraged! Whether it's improving existing models, adding new projects, or fixing bugs, your input is valuable. To contribute:
