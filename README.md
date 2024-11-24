@@ -19,7 +19,7 @@ This project implements a convolutional neural network (CNN) enhanced with a glo
 
 The CNN model processes images of CAPTCHAs (each containing 5 alphanumeric characters) and utilizes the attention layer to focus on specific parts of the image. This attention mechanism allows the network to learn where to focus, making it more robust in interpreting challenging CAPTCHAs. The model achieves an impressive accuracy of over 97%.
 
-More information, including the dataset, model architecture, training process, and results, can be found in the ```CaptchaSolver``` folder.
+More details, including the dataset, model implementation and results, can be found in the ```CaptchaSolver``` folder.
 
 #### Key features:
 - Model: Convolutional neural network (CNN) with a global attention layer.
@@ -34,7 +34,7 @@ This project explores binary image classification using a convolutional neural n
 
 The model was trained on roughly 1,000 images (500 for each class) using supervised learning techniques. Due to the visual similarities between the two classes, this project serves as a great demonstration of the limitations and challenges faced by models in distinguishing between highly similar objects. Techniques such as data augmentation and dropout are used to prevent overfitting and improve the model's performance.
 
-More details, including the dataset, model implementation, and results, can be found in the ```MargotRobbie_or_JaimePressly``` folder.
+More details, including the dataset, model implementation and results, can be found in the ```MargotRobbie_or_JaimePressly``` folder.
 
 #### Key features:
 - Model: Convolutional neural network (CNN).
@@ -45,6 +45,8 @@ More details, including the dataset, model implementation, and results, can be f
 
 ### Random Handwritten Digits Generator
 This project focuses on generating random handwritten digits using a Generative Adversarial Network (GAN). The objective is to create realistic images of digits that mimic human handwriting. By training the GAN on a dataset of handwritten digits, the model learns to produce high-quality images that can be used for various applications, such as digit recognition and data augmentation. Despite the inherent challenges of generating diverse and coherent outputs, the model successfully achieves impressive results in creating realistic handwritten digits.
+
+More details, including the dataset, model implementation and results, can be found in the ```RandomHandwrittenDigitsGenerator``` folder.
 
 #### Key features:
 - Model: Generative Adversarial Network (GAN).
@@ -61,6 +63,8 @@ The model underwent two training phases:
 2. Fine-tuning on 500k images for 5 epochs with adversarial loss only.
 
 The training datasets include FFHQ, CelebA-HQ, and Synthetic Faces High Quality (SFHQ), resized to 256x256 for uniformity.
+
+More details, including the dataset, model implementation and results, can be found in the ```ColorizerGAN``` folder.
 
 #### Key Features:
 - Model: U-Net Generator + PatchGAN Discriminator.
