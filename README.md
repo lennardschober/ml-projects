@@ -56,6 +56,7 @@ More details, including the dataset, model implementation and results, can be fo
 ---
 
 ### Portrait Colorization
+#### Try the [huggingface space for this project](https://huggingface.co/spaces/LennyS17/portrait-colorizer)
 This project uses a deep learning model to colorize grayscale portraits, leveraging a U-Net Generator and a PatchGAN Discriminator. The architecture is inspired by Pix2Pix, optimized to work in the La*b* color space, enabling the model to hallucinate only the color channels while preserving the structural integrity of the grayscale input.
 
 The model underwent two training phases:
